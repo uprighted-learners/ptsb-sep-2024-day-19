@@ -28,3 +28,5 @@ let book = {
 // dot notation and bracket notation
 console.log("Book Title: ", book.title)
 console.log("Book Author: ", book["author"])
+
+console.log()
