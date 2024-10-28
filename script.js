@@ -13,8 +13,8 @@ let student = {
 };
 
 // logging student street address
-console.log("Student street: ", student.address.street)
-console.log("Bill's third grade of the array: ", student.grades[2])
+// console.log("Student street: ", student.address.street)
+// console.log("Bill's third grade of the array: ", student.grades[2])
 
 // book object
 let book = {
@@ -26,30 +26,30 @@ let book = {
 };
 
 // dot notation and bracket notation
-console.log("Book Title: ", book.title)
-console.log("Book Author: ", book["author"])
+// console.log("Book Title: ", book.title)
+// console.log("Book Author: ", book["author"])
 
 // adding a new property
 student.lastName = "Gates";
-console.log("Student last name: ", student.lastName)
-console.log(student)
+// console.log("Student last name: ", student.lastName)
+// console.log(student)
 
 // updating a property
 student.name = "Bill Gates";
-console.log("Student name: ", student.name)
+// console.log("Student name: ", student.name)
 
 // deleting a property
 student.lastName = "";
-console.log("Student last name: ", student.lastName) // empty string
+// console.log("Student last name: ", student.lastName) // empty string
 
 delete student.lastName;
-console.log("Student last name: ", student.lastName) // undefined
+// console.log("Student last name: ", student.lastName) // undefined
 
 // changing the key in an object
 const obj = { name: "Billy", age: 30 }
 obj.newName = obj.name;
 delete obj.name;
-console.log(obj)
+// console.log(obj)
 
 students = [
     {
@@ -90,7 +90,7 @@ students = [
     }
 ];
 
-console.log(students)
+// console.log(students)
 
 // for loop to iterate through the array of objects and add a "lastName" key
 for (let i = 0; i < students.length; i++) {
@@ -120,6 +120,20 @@ let revisedStudents = students.map(student => {
     return student;
 })
 
-console.log(students)
+// console.log(students)
 
-console.log(revisedStudents)
+// console.log(revisedStudents)
+
+let product = {
+    name: "iPhone",
+    brand: "Apple",
+    price: 1000,
+    color: "black",
+}
+console.log(product.name)
+product.year = 2023;
+product.price = 1200;
+console.log(product)
+
+delete product.price;
+console.log(product)
