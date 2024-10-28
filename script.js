@@ -179,3 +179,15 @@ if (car.hasOwnProperty("year")) {
     console.log("This car does not have a year.")
 }
 
+let inventoryItem = {
+    name: "towels",
+    quantity: 80,
+    price: 4.99,
+}
+console.log(inventoryItem)
+inventoryItem.color = ["red", "Green", "Blue"];
+console.log(inventoryItem)
+
+inventoryItem.quantity = 62
+console.log(inventoryItem.quantity)
+
