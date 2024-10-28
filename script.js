@@ -1,3 +1,4 @@
+// student object
 let student = {
     name: "Bill",
     age: 25,
@@ -11,4 +12,19 @@ let student = {
     }
 };
 
-console.log(student);
+// logging student street address
+console.log("Student street: ", student.address.street)
+console.log("Bill's third grade of the array: ", student.grades[2])
+
+// book object
+let book = {
+    title: "The Great Gatsby",
+    author: "F. Scott Fitzgerald",
+    year: 1925,
+    genre: "Fiction",
+    pages: 180
+};
+
+// dot notation and bracket notation
+console.log("Book Title: ", book.title)
+console.log("Book Author: ", book["author"])
