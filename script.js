@@ -1,3 +1,11 @@
+
+
+
+
+
+
+
+
 // student object
 let student = {
     name: "Bill",
@@ -137,3 +145,37 @@ console.log(product)
 
 delete product.price;
 console.log(product)
+
+let car = {
+    make: "Honda",
+    model: "Accord",
+    year: 1999,
+    color: "black",
+}
+
+console.log(car)
+car.mileage = 1654132
+
+console.log(car)
+
+car.color = "red";
+console.log(car);
+
+if (car.mileage) {
+    console.log(`This car has ${car.mileage} miles.`)
+} else {
+    console.log("or not...")
+}
+
+if ("make" in car) {
+    console.log("This car has a make.")
+} else {
+    console.log("This car does not have a make.")
+}
+
+if (car.hasOwnProperty("year")) {
+    console.log("This car has a year.")
+} else {
+    console.log("This car does not have a year.")
+}
+
